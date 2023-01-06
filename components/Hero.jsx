@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export const Hero = () => {
   return (
+    // test
     <div className="dark:bg-gray-900">
       <div className="flex flex-col lg:flex-row items-stretch justify-between lg:px-0 px-6 lg:py-10 py-2 2xl:mx-auto 2xl:container">
         <div className="z-30 relative lg:w-1/2">
@@ -15,6 +16,7 @@ export const Hero = () => {
               />
             </div>
           </div>
+
           <div className="absolute top-0 dark:bg-gray-800 bg-gray-100 md:h-96 w-full hidden md:block lg:hidden"></div>
           <div className="w-full h-full lg:hidden">
             <img
