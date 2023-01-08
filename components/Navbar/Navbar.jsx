@@ -38,7 +38,7 @@ const Navbar = () => {
           <FaHamburger className="h-6 w-6" aria-hidden="true" />
         </Popover.Button>
       </div>
-      <Popover.Overlay className=" sm:hidden fixed inset-0 bg-black opacity-40" />
+      <Popover.Overlay className="z-32 sm:hidden fixed inset-0 bg-black opacity-40" />
       <Transition
         as={Fragment}
         enter="duration-200 ease-out"
@@ -50,21 +50,26 @@ const Navbar = () => {
       >
         <Popover.Panel
           focus
-          className="absolute inset-x-0 z-10 top-0 origin-top-right transform p-2 transition md:hidden"
+          className=" z-32 absolute inset-x-0 z-10 top-0 origin-top-right transform p-2 transition md:hidden"
         >
-          <div className="rounded-md bg-white font-black shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-50">
-            <div className="px-5 pt-5 pb-6">
-              <div className="flex items-center justify-between">
-                <h1 className="font-bold text-2xl text-black ">dibery.co</h1>
-                <div className="mr-1 -mt-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus-ring-2 focus:ring-inset focus:ring-indigo-500">
+          <div className=" z-32 rounded-md bg-white font-black shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-50">
+            <div className="z-32 px-5 pt-5 pb-6">
+              <div className="z-32 flex items-center justify-between">
+                <h1 className="z-32 font-bold text-2xl text-black ">
+                  dibery.co
+                </h1>
+                <div className=" z-32 mr-1 -mt-2">
+                  <Popover.Button className=" z-32 inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus-ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
-                    <AiOutlineClose className="h-6 w-6" aria-hidden="true" />
+                    <AiOutlineClose
+                      className=" z-32 h-6 w-6"
+                      aria-hidden="true"
+                    />
                   </Popover.Button>
                 </div>
               </div>
-              <div className="mt-6">
-                <nav className="grid gap-y-6 text-black font-medium">
+              <div className="z-32 mt-6 z-32 ">
+                <nav className=" z-32 grid gap-y-6 text-black font-medium">
                   <Link
                     className="hover:text-gray-600 focus:outline-none focus:rounded-md focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"
                     href="/"
@@ -73,7 +78,7 @@ const Navbar = () => {
                   </Link>
 
                   <Link
-                    className=" hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"
+                    className="z-32 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 px-2"
                     href="about"
                   >
                     About
