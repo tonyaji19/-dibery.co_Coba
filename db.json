@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "coba json-server",
+      "image": "https://cf.shopee.co.id/file/249ffd37644fb857e66ca9f2adffe653",
+      "body": "Cara Membuat Restful API Tanpa Coding dengan Typicode Json Server"
+    },
+    {
+      "id": 2,
+      "title": "Nikon",
+      "image": "https://cf.shopee.co.id/file/249ffd37644fb857e66ca9f2adffe653",
+      "body": "inikon"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Lorem Ipsum",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

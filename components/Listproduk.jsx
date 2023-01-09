@@ -25,7 +25,7 @@ const Listproduk = () => {
       >
         Products
       </div>
-      <div className="xl:mx-20 md:mx-2 sm:mx-28 grid md:grid-cols-2 lg:grid-cols-3 justify-items-between items-center">
+      <div className=" items-stretch xl:mx-20 md:mx-2 sm:mx-28 grid md:grid-cols-2 lg:grid-cols-3 justify-items-between ">
         {data &&
           data.map((user) => (
             <>
