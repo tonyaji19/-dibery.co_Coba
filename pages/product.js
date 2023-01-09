@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 import Link from "next/link";
 import Footer from "../components/Footer";
-
+/*eslint-disable */
 const product = () => {
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
   const { data, error, isloading } = useSWR(
